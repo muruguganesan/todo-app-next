@@ -22,7 +22,7 @@ export default function TodoItem({todoJSON,setTodoJSON}) {
     return (
         <div className="todoItems">
             {
-                todoJSON.map((ele,index)=><div key={index} className="todo_item_w">
+                todoJSON?.map((ele,index)=><div key={index} className="todo_item_w">
                     <div className="todo_item">
                     <div className="todo_item_lft">
                         <button className={`rnt_btn ${ele.complete?"checked":""}`} onClick={()=>handleCheckedFn(ele.id)}></button>

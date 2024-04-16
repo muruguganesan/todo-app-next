@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <div className="wrapper">
       <Header />
-      <TodoProgress completed_task={completedTodoArr.length} total_task={todoJSON.length} />
+      <TodoProgress completed_task={completedTodoArr?.length} total_task={todoJSON?.length} />
       <TodoForm setTodoJSON={setTodoJSON} />
       <TodoWrap todoJSON={todoJSON} setTodoJSON={setTodoJSON} />
     </div>
